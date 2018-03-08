@@ -1,0 +1,6 @@
+framework module Pods_SculpTech_Practical {
+  umbrella header "Pods-SculpTech_Practical-umbrella.h"
+
+  export *
+  module * { export * }
+}

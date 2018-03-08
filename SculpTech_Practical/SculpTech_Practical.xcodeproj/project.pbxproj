@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		151CE34F202DD2CF006FE43D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151CE34E202DD2CF006FE43D /* AppDelegate.swift */; };
+		151CE354202DD2CF006FE43D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151CE352202DD2CF006FE43D /* Main.storyboard */; };
+		151CE356202DD2CF006FE43D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 151CE355202DD2CF006FE43D /* Assets.xcassets */; };
+		151CE359202DD2CF006FE43D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151CE357202DD2CF006FE43D /* LaunchScreen.storyboard */; };
+		151CE366202DD3E0006FE43D /* CarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151CE365202DD3E0006FE43D /* CarListViewController.swift */; };
+		151CE368202DD43B006FE43D /* CarListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151CE367202DD43B006FE43D /* CarListTableViewCell.swift */; };
+		151CE36A202DD456006FE43D /* CarImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151CE369202DD456006FE43D /* CarImageCollectionViewCell.swift */; };
+		151CE36C202DE24E006FE43D /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151CE36B202DE24E006FE43D /* Car.swift */; };
+		151CE36E202DEA7D006FE43D /* BaseAPICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151CE36D202DEA7D006FE43D /* BaseAPICall.swift */; };
+		151CE370202DEB38006FE43D /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151CE36F202DEB38006FE43D /* AppUtility.swift */; };
+		151CE372202E07D5006FE43D /* ExtentionUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151CE371202E07D5006FE43D /* ExtentionUtility.swift */; };
+		489A953FFAA13CD446071A0C /* Pods_SculpTech_Practical.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B328FF9AC5C6EDDE83ED80 /* Pods_SculpTech_Practical.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		13DACF08FE6606E1357497E3 /* Pods-SculpTech_Practical.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SculpTech_Practical.release.xcconfig"; path = "Pods/Target Support Files/Pods-SculpTech_Practical/Pods-SculpTech_Practical.release.xcconfig"; sourceTree = "<group>"; };
+		151CE34B202DD2CF006FE43D /* SculpTech_Practical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SculpTech_Practical.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		151CE34E202DD2CF006FE43D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		151CE353202DD2CF006FE43D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		151CE355202DD2CF006FE43D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		151CE358202DD2CF006FE43D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		151CE35A202DD2CF006FE43D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		151CE365202DD3E0006FE43D /* CarListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewController.swift; sourceTree = "<group>"; };
+		151CE367202DD43B006FE43D /* CarListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListTableViewCell.swift; sourceTree = "<group>"; };
+		151CE369202DD456006FE43D /* CarImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		151CE36B202DE24E006FE43D /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		151CE36D202DEA7D006FE43D /* BaseAPICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPICall.swift; sourceTree = "<group>"; };
+		151CE36F202DEB38006FE43D /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
+		151CE371202E07D5006FE43D /* ExtentionUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionUtility.swift; sourceTree = "<group>"; };
+		4D90093F24C59CC59CA07AFC /* Pods-SculpTech_Practical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SculpTech_Practical.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SculpTech_Practical/Pods-SculpTech_Practical.debug.xcconfig"; sourceTree = "<group>"; };
+		72B328FF9AC5C6EDDE83ED80 /* Pods_SculpTech_Practical.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SculpTech_Practical.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		151CE348202DD2CF006FE43D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				489A953FFAA13CD446071A0C /* Pods_SculpTech_Practical.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		151CE342202DD2CF006FE43D = {
+			isa = PBXGroup;
+			children = (
+				151CE34D202DD2CF006FE43D /* SculpTech_Practical */,
+				151CE34C202DD2CF006FE43D /* Products */,
+				60C16C8056CBF9D0E4647023 /* Pods */,
+				4A7272908845021977D40322 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		151CE34C202DD2CF006FE43D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				151CE34B202DD2CF006FE43D /* SculpTech_Practical.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		151CE34D202DD2CF006FE43D /* SculpTech_Practical */ = {
+			isa = PBXGroup;
+			children = (
+				151CE364202DD355006FE43D /* Models */,
+				151CE363202DD34C006FE43D /* Utils */,
+				151CE360202DD304006FE43D /* Controllers */,
+				151CE34E202DD2CF006FE43D /* AppDelegate.swift */,
+				151CE352202DD2CF006FE43D /* Main.storyboard */,
+				151CE355202DD2CF006FE43D /* Assets.xcassets */,
+				151CE357202DD2CF006FE43D /* LaunchScreen.storyboard */,
+				151CE35A202DD2CF006FE43D /* Info.plist */,
+			);
+			path = SculpTech_Practical;
+			sourceTree = "<group>";
+		};
+		151CE360202DD304006FE43D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				151CE361202DD31E006FE43D /* ViewControlls */,
+				151CE362202DD330006FE43D /* Cell */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		151CE361202DD31E006FE43D /* ViewControlls */ = {
+			isa = PBXGroup;
+			children = (
+				151CE365202DD3E0006FE43D /* CarListViewController.swift */,
+			);
+			path = ViewControlls;
+			sourceTree = "<group>";
+		};
+		151CE362202DD330006FE43D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				151CE367202DD43B006FE43D /* CarListTableViewCell.swift */,
+				151CE369202DD456006FE43D /* CarImageCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		151CE363202DD34C006FE43D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				151CE36D202DEA7D006FE43D /* BaseAPICall.swift */,
+				151CE36F202DEB38006FE43D /* AppUtility.swift */,
+				151CE371202E07D5006FE43D /* ExtentionUtility.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		151CE364202DD355006FE43D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				151CE36B202DE24E006FE43D /* Car.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A7272908845021977D40322 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72B328FF9AC5C6EDDE83ED80 /* Pods_SculpTech_Practical.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60C16C8056CBF9D0E4647023 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D90093F24C59CC59CA07AFC /* Pods-SculpTech_Practical.debug.xcconfig */,
+				13DACF08FE6606E1357497E3 /* Pods-SculpTech_Practical.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		151CE34A202DD2CF006FE43D /* SculpTech_Practical */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 151CE35D202DD2CF006FE43D /* Build configuration list for PBXNativeTarget "SculpTech_Practical" */;
+			buildPhases = (
+				AFB2426B0B62B12E2AA71D01 /* [CP] Check Pods Manifest.lock */,
+				151CE347202DD2CF006FE43D /* Sources */,
+				151CE348202DD2CF006FE43D /* Frameworks */,
+				151CE349202DD2CF006FE43D /* Resources */,
+				E32015598916CF246F119367 /* [CP] Embed Pods Frameworks */,
+				B2FEAA36275EFF30B9A5E203 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SculpTech_Practical;
+			productName = SculpTech_Practical;
+			productReference = 151CE34B202DD2CF006FE43D /* SculpTech_Practical.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		151CE343202DD2CF006FE43D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = TestDemo;
+				TargetAttributes = {
+					151CE34A202DD2CF006FE43D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 151CE346202DD2CF006FE43D /* Build configuration list for PBXProject "SculpTech_Practical" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 151CE342202DD2CF006FE43D;
+			productRefGroup = 151CE34C202DD2CF006FE43D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				151CE34A202DD2CF006FE43D /* SculpTech_Practical */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		151CE349202DD2CF006FE43D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				151CE359202DD2CF006FE43D /* LaunchScreen.storyboard in Resources */,
+				151CE356202DD2CF006FE43D /* Assets.xcassets in Resources */,
+				151CE354202DD2CF006FE43D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AFB2426B0B62B12E2AA71D01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SculpTech_Practical-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2FEAA36275EFF30B9A5E203 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SculpTech_Practical/Pods-SculpTech_Practical-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E32015598916CF246F119367 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SculpTech_Practical/Pods-SculpTech_Practical-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SculpTech_Practical/Pods-SculpTech_Practical-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		151CE347202DD2CF006FE43D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				151CE370202DEB38006FE43D /* AppUtility.swift in Sources */,
+				151CE366202DD3E0006FE43D /* CarListViewController.swift in Sources */,
+				151CE36E202DEA7D006FE43D /* BaseAPICall.swift in Sources */,
+				151CE372202E07D5006FE43D /* ExtentionUtility.swift in Sources */,
+				151CE34F202DD2CF006FE43D /* AppDelegate.swift in Sources */,
+				151CE36C202DE24E006FE43D /* Car.swift in Sources */,
+				151CE36A202DD456006FE43D /* CarImageCollectionViewCell.swift in Sources */,
+				151CE368202DD43B006FE43D /* CarListTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		151CE352202DD2CF006FE43D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				151CE353202DD2CF006FE43D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		151CE357202DD2CF006FE43D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				151CE358202DD2CF006FE43D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		151CE35B202DD2CF006FE43D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		151CE35C202DD2CF006FE43D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		151CE35E202DD2CF006FE43D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D90093F24C59CC59CA07AFC /* Pods-SculpTech_Practical.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SculpTech_Practical/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Practical.SculpTech-Practical";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		151CE35F202DD2CF006FE43D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13DACF08FE6606E1357497E3 /* Pods-SculpTech_Practical.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SculpTech_Practical/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Practical.SculpTech-Practical";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		151CE346202DD2CF006FE43D /* Build configuration list for PBXProject "SculpTech_Practical" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				151CE35B202DD2CF006FE43D /* Debug */,
+				151CE35C202DD2CF006FE43D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		151CE35D202DD2CF006FE43D /* Build configuration list for PBXNativeTarget "SculpTech_Practical" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				151CE35E202DD2CF006FE43D /* Debug */,
+				151CE35F202DD2CF006FE43D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 151CE343202DD2CF006FE43D /* Project object */;
+}
